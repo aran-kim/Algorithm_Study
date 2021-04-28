@@ -1,0 +1,5 @@
+# ignore file
+
+*.sln
+*/Debug/
+*.vs
