@@ -3,4 +3,6 @@
 *.sln
 */Debug/
 *.vs
-*.vcxproj
+*.vcxproe
+*.vcxproj.
+
