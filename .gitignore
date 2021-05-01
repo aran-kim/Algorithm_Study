@@ -4,5 +4,8 @@
 */Debug/
 *.vs
 *.vcxproe
-*.vcxproj.
-
+*.vcxproj.filters
+*.vcxproj.user
+*.vcxproj
+*/Debug
+*Debug/
