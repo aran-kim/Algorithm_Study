@@ -7,17 +7,18 @@ int main() {
 	cin >> N;
 	int k = 0;
 	int seq = 1;
-	for (int i = 0; i < N; i++) {
+	for (int i = 0; i < N-1; i++) {		
 		switch (seq) {
 		case 1:
 			denominator++;
 			seq = 2;
 			break;
 		case 2:
-			while (denominator != 1) {
+			while (denominator != 1&&(i<N-1)) {
 				denominator--; numerator++;
 				i++;
 			}
+			i--;
 			seq = 3;
 			break;
 		case 3:
@@ -25,14 +26,14 @@ int main() {
 			seq = 4;
 			break;
 		case 4:
-			while (numerator != 1) {
+			while (numerator != 1&&(i<N-1)) {
 				denominator++; numerator--;
 				i++;
 			}
+			i--;
 			seq = 1;
 			break;
 		}
-		cout << numerator << "/" << denominator << " ";
 	}
 
 	cout << numerator << "/" << denominator;
