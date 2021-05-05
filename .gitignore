@@ -9,3 +9,7 @@
 *.vcxproj
 */Debug
 *Debug/
+*.user
+*.filters
+*.vcxproj
+
