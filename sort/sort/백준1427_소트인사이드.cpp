@@ -12,12 +12,11 @@ int main() {
 		N /= 10;
 		c++;
 	}
-	cout << c;
 	for (int i = 0; i < c; i++) {
 		int n = num / (int)pow(10, i)  % 10;
-		cout << n;
 		count[n]++;
 	}
+
 	for (int i = 9; i >= 0; i--) {
 		while (count[i] != 0) {
 			cout << i;
