@@ -20,6 +20,7 @@ int w(int a, int b, int c) {
 		return dp[a + 50][b + 50][c + 50] = w(a - 1, b, c) + w(a - 1, b - 1, c) + w(a - 1, b, c - 1) - w(a - 1, b - 1, c - 1);
 	}
 }
+
 int main() {
 	cin.tie(0);
 	ios::sync_with_stdio(0);
