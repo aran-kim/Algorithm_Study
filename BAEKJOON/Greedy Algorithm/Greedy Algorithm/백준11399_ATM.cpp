@@ -21,7 +21,6 @@ int main() {
 	int temp = P[0];
 	for (int i = 1; i < N; i++) {
 		temp += P[i];
-		cout << sum << P[i] << "\n";
 		sum += temp;
 	}
 
